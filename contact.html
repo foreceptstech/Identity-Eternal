@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    body{
+      background-color: #eeeeee;
+    } 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .banner-image{
+      height: 260px;
+    	background-image: url("images/contact.png");
+    	 background-repeat: no-repeat;
+    	 background-size: 100%  100%;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #465782;
+      padding: 25px;
+      height: 220px;
+    }
+
+    .logo{
+    	width:63px;
+    	height: 40px;
+    }
+    .box-shape{
+    	width:200px;
+    	height:200px;
+    }
+
+    .white-text{
+    	color: #fff;
+    }
+
+/*    .image-box {
+    position: relative;
+    width: 50%;
+}
+*/
+
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo" src="images/logo1.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron banner-image">
+  <div class="container text-center white-text">
+   
+  </div>
+</div>
+<br><br>
+
+<div class="container">
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">Contact form</div>
+      <div class="panel-body">
+
+    <form role="form" id="contact-form" class="contact-form">
+                    <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                      </div>
+                    </div>
+                      <div class="col-md-6">
+                      <div class="form-group">
+                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <div class="form-group">
+                            <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12">
+                  <button type="submit" class="btn main-btn pull-right">Send a message</button>
+                  </div>
+                  </div>
+                </form>
+  </div>
+</div>
+
+</div>
+</div>
+    </div>
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>&copy;Copyright: All rights Reserved</p>
+</footer>
+
+</body>
+</html>
